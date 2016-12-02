@@ -19,9 +19,8 @@ async def handle_sending(websocket):
     )
 
     while True:
-        msg = await loop.run_in_executor(executor, input, 'Message:')
+        msg = await loop.run_in_executor(executor, input)
         await websocket.send(msg)
-        print("> {}".format(msg))
 
 
 async def client():
