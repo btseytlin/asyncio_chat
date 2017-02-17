@@ -7,9 +7,6 @@ import functools
 HOST ='localhost'
 PORT = 8765
 
-#todo 
-# 1. Add ability to leave chat room
-
 
 class ClientAlreadyExistsException(Exception):
     pass
